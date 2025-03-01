@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" /> -->
+    <!-- 
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+    }
+  </style> -->
+  </head>
+
+  <body class="bg-[#eceefa] w-full">
+    <!-- HEADER SECTION START -->
+    <header>
+      <nav
+        class="w-[85%] h-[100px] bg-[#ffffff] block mx-auto rounded-2xl my-5"
+      >
+        <div class="flex justify-between items-center p-5">
+          <div class="flex items-center gap-2.5">
+            <img
+              src="assets/logo.png"
+              alt=""
+              class="w-[51px] h-[51px] bg-cover"
+            />
+            <p class="text-[35px]">Dev<strong>Board</strong></p>
+          </div>
+
+          <div class="gap-[30px] flex">
+            <div
+              class="flex w-[123px] bg-[#eceefa] rounded-[22px] justify-center items-center gap-[10px]"
+            >
+              <img src="assets/checkbox.png" alt="" class="w-[32px] h-[32px]" />
+              <h5 class="text-[20px]">23</h5>
+            </div>
+            <div
+              id="bg-selector"
+              class="w-[62px] h-[62px] bg-[#eceefa] rounded-full flex justify-center items-center"
+            >
+              <img
+                src="assets/theme-btn.png"
+                alt=""
+                class="w-[40px] h-[40px]"
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <main>
+      <!-- TASK BOARD SECTION START -->
+      <div class="w-[85%] mx-auto gap-4 grid grid-cols-[76%_24%] mb-5">
+        <!-- TASK BOX -->
+        <div class="bg-[#ffffff] w-full h-auto rounded-2xl p-4">
+          <div class="mx-auto gap-3 grid grid-cols-[1fr_1.5fr_1fr]">
+            <!-- first task box -->
+            <div
+              class="bg-[#eceefa] w-full rounded-2xl h-auto flex items-center gap-3 px-5 py-3"
+            >
+              <div
+                class="w-[54px] h-[54px] bg-[#fff] rounded-full flex justify-center items-center"
+              >
+                <img
+                  src="assets/checkbox.png"
+                  alt=""
+                  class="w-[28px] h-[28px]"
+                />
+              </div>
+              <div>
+                <p class="text-base font-medium tracking-[1px]">
+                  Task Assigned
+                </p>
+                <h4 class="text-3xl font-bold tracking-[1px]">05</h4>
+              </div>
+            </div>
+            <!-- second task box -->
+            <div
+              class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] w-full rounded-2xl h-auto flex items-center gap-3 px-5 py-3"
+            >
+              <div>
+                <img src="assets/board.png" alt="" class="w-[79px] h-[79px]" />
+              </div>
+              <div>
+                <h4 class="text-xl font-medium text-white tracking-[1px]">
+                  Discover Something New Today!
+                </h4>
+              </div>
+            </div>
+            <!-- third task box -->
+            <div
+              class="bg-[#eceefa] w-full rounded-2xl h-auto flex items-center gap-3 px-5 py-3"
+            >
+              <div
+                class="w-[54px] h-[54px] bg-[#fff] rounded-full flex justify-center items-center"
+              >
+                <img
+                  src="assets/calender.png"
+                  alt=""
+                  class="w-[28px] h-[28px]"
+                />
+              </div>
+              <div>
+                <p class="text-base font-medium tracking-[1px]">
+                  Task Assigned
+                </p>
+                <h4 class="text-3xl font-bold tracking-[1px]">05</h4>
+              </div>
+            </div>
+          </div>
+          <!-- TASK ASSIGN SECTION START -->
+          <div class="grid grid-cols-3 gap-4 my-5">
+            <!-- BOX-1 -->
+            <div class="bg-[#eceefa] rounded-2xl w-full h-auto p-5">
+              <h5
+                class="w-[104px] h-[40px] bg-[#fff] rounded-lg text-base font-normal flex justify-center items-center"
+              >
+                ShopEase
+              </h5>
+              <h3 class="font-semibold text-xl my-4">
+                Fix Mobile Button Issue
+              </h3>
+              <div class="bg-[#fff] rounded-lg p-3">
+                <p class="text-base text-[#757575] font-normal">
+                  Debug using Chrome DevTools, check for overlapping...
+                </p>
+              </div>
+              <div class="flex justify-between mt-4 gap-4">
+                <div>
+                  <p class="text-sm text-[#777777] pt-5">Deadline</p>
+                  <h4 class="text-sm font-semibold">21 March 2025</h4>
+                </div>
+                <button
+                  class="w-[120px] h-[48px] bg-[#3752FD] hover:bg-[#fff] hover:text-[#3752FD] text-[#fff] rounded-lg hover:rounded-none hover:border-2 hover:border-[#3752FD] font-medium text-base block mx-auto mt-4"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <!-- BOX-2 -->
+            <div class="bg-[#eceefa] rounded-2xl w-full h-auto p-5">
+              <h5
+                class="w-[104px] h-[40px] bg-[#fff] rounded-lg text-base font-normal flex justify-center items-center"
+              >
+                CloudSync
+              </h5>
+              <h3 class="font-semibold text-xl my-4">Add Dark Mode</h3>
+              <div class="bg-[#fff] rounded-lg p-3">
+                <p class="text-base text-[#757575] font-normal">
+                  Store the user's preference in localStorage, update CSS
+                  varia...
+                </p>
+              </div>
+              <div class="flex justify-between mt-4 gap-4">
+                <div>
+                  <p class="text-sm text-[#777777] pt-5">Deadline</p>
+                  <h4 class="text-sm font-semibold">21 March 2025</h4>
+                </div>
+                <button
+                  class="w-[120px] h-[48px] bg-[#3752FD] hover:bg-[#fff] hover:text-[#3752FD] text-[#fff] rounded-lg hover:rounded-none hover:border-2 hover:border-[#3752FD] font-medium text-base block mx-auto mt-4"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <!-- BOX-3 -->
+            <div class="bg-[#eceefa] rounded-2xl w-full h-auto p-5">
+              <h5
+                class="w-[104px] h-[40px] bg-[#fff] rounded-lg text-base font-normal flex justify-center items-center"
+              >
+                SwiftPay
+              </h5>
+              <h3 class="font-semibold text-xl my-4">Optimize Home page</h3>
+              <div class="bg-[#fff] rounded-lg p-3">
+                <p class="text-base text-[#757575] font-normal">
+                  Debug using Chrome DevTools, check for overlapping...
+                </p>
+              </div>
+              <div class="flex justify-between mt-4 gap-4">
+                <div>
+                  <p class="text-sm text-[#777777] pt-5">Deadline</p>
+                  <h4 class="text-sm font-semibold">21 March 2025</h4>
+                </div>
+                <button
+                  class="w-[120px] h-[48px] bg-[#3752FD] hover:bg-[#fff] hover:text-[#3752FD] text-[#fff] rounded-lg hover:rounded-none hover:border-2 hover:border-[#3752FD] font-medium text-base block mx-auto mt-4"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <!-- BOX-4 -->
+            <div class="bg-[#eceefa] rounded-2xl w-full h-auto p-5">
+              <h5
+                class="w-[104px] h-[40px] bg-[#fff] rounded-lg text-base font-normal flex justify-center items-center"
+              >
+                Meta
+              </h5>
+              <h3 class="font-semibold text-xl my-4">Add new emoji 🤲</h3>
+              <div class="bg-[#fff] rounded-lg p-3">
+                <p class="text-base text-[#757575] font-normal">
+                  Debug using Chrome DevTools, check for overlapping...
+                </p>
+              </div>
+              <div class="flex justify-between mt-4 gap-4">
+                <div>
+                  <p class="text-sm text-[#777777] pt-5">Deadline</p>
+                  <h4 class="text-sm font-semibold">21 March 2025</h4>
+                </div>
+                <button
+                  class="w-[120px] h-[48px] bg-[#3752FD] hover:bg-[#fff] hover:text-[#3752FD] text-[#fff] rounded-lg hover:rounded-none hover:border-2 hover:border-[#3752FD] font-medium text-base block mx-auto mt-4"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <!-- BOX-5 -->
+            <div class="bg-[#eceefa] rounded-2xl w-full h-auto p-5">
+              <h5
+                class="w-[104px] h-[40px] bg-[#fff] rounded-lg text-base font-normal flex justify-center items-center"
+              >
+                Google LLC
+              </h5>
+              <h3 class="font-semibold text-xl my-4">Integrate OpenAI API</h3>
+              <div class="bg-[#fff] rounded-lg p-3">
+                <p class="text-base text-[#757575] font-normal">
+                  Debug using Chrome DevTools, check for overlapping...
+                </p>
+              </div>
+              <div class="flex justify-between mt-4 gap-4">
+                <div>
+                  <p class="text-sm text-[#777777] pt-5">Deadline</p>
+                  <h4 class="text-sm font-semibold">21 March 2025</h4>
+                </div>
+                <button
+                  class="w-[120px] h-[48px] bg-[#3752FD] hover:bg-[#fff] hover:text-[#3752FD] text-[#fff] rounded-lg hover:rounded-none hover:border-2 hover:border-[#3752FD] font-medium text-base block mx-auto mt-4"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <!-- BOX-6 -->
+            <div class="bg-[#eceefa] rounded-2xl w-full h-auto p-5">
+              <h5
+                class="w-[104px] h-[40px] bg-[#fff] rounded-lg text-base font-normal flex justify-center items-center"
+              >
+                Glassdoar
+              </h5>
+              <h3 class="font-semibold text-xl my-4">Improve Job searching</h3>
+              <div class="bg-[#fff] rounded-lg p-3">
+                <p class="text-base text-[#757575] font-normal">
+                  Debug using Chrome DevTools, check for overlapping...
+                </p>
+              </div>
+              <div class="flex justify-between mt-4 gap-4">
+                <div>
+                  <p class="text-sm text-[#777777] pt-5">Deadline</p>
+                  <h4 class="text-sm font-semibold">21 March 2025</h4>
+                </div>
+                <button
+                  class="w-[120px] h-[48px] bg-[#3752FD] hover:bg-[#fff] hover:text-[#3752FD] text-[#fff] rounded-lg hover:rounded-none hover:border-2 hover:border-[#3752FD] font-medium text-base block mx-auto mt-4"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <!-- TASK ASSIGN SECTION END -->
+          </div>
+        </div>
+
+        <!-- ACTIVITY BOX -->
+        <div class="bg-[#fff] w-full min-h-[400px] p-5 text-center rounded-2xl">
+          <div class="flex justify-center">
+            <img src="assets/activity.png" alt="" class="w-[24px] h-[24px]" />
+            <h3 class="font-medium text-xl tracking-[1px]">Activity Log</h3>
+          </div>
+          <button
+            class="w-[150px] h-[48px] bg-[#3752FD] hover:bg-[#fff] hover:text-[#3752FD] text-[#fff] rounded-lg hover:rounded-none hover:border-2 hover:border-[#3752FD] font-medium text-xl mt-4"
+          >
+            Clear History
+          </button>
+        </div>
+        <!-- TASK BOARD SECTION END -->
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
