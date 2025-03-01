@@ -19,7 +19,7 @@
     </style>
   </head>
 
-  <body class="bg-[#eceefa] w-full">
+  <body class="bg-[#eceefa] w-full" id="body">
     <!-- HEADER SECTION START -->
     <header>
       <nav
@@ -44,7 +44,7 @@
             </div>
             <div
               id="bg-selector"
-              class="w-[62px] h-[62px] bg-[#eceefa] rounded-full flex justify-center items-center"
+              class="w-[62px] h-[62px] bg-[#eceefa] rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
                 src="assets/theme-btn.png"
@@ -81,12 +81,11 @@
                 <p class="text-base font-medium tracking-[1px]">
                   Task Assigned
                 </p>
-                <h4 class="text-3xl font-bold tracking-[1px]">05</h4>
+                <h4 class="text-3xl font-bold tracking-[1px]">00</h4>
               </div>
             </div>
             <!-- second task box -->
-            <div
-              class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] w-full rounded-2xl h-auto flex items-center gap-3 px-5 py-3"
+            <div id="next_page" class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] w-full rounded-2xl h-auto flex items-center gap-3 px-5 py-3 cursor-pointer"
             >
               <div>
                 <img src="assets/board.png" alt="" class="w-[79px] h-[79px]" />
@@ -141,7 +140,7 @@
                   <h4 class="text-sm font-semibold">21 March 2025</h4>
                 </div>
                 <button
-                  class="w-[120px] h-[48px] bg-[#3752FD] hover:bg-[#fff] hover:text-[#3752FD] text-[#fff] rounded-lg hover:rounded-none hover:border-2 hover:border-[#3752FD] font-medium text-base block mx-auto mt-4"
+                  class="w-[100px] h-[48px] bg-[#3752FD] hover:bg-[#fff] hover:text-[#3752FD] text-[#fff] rounded-lg hover:rounded-none hover:border-2 hover:border-[#3752FD] font-medium text-sm block mx-auto mt-4"
                 >
                   Completed
                 </button>
@@ -167,7 +166,7 @@
                   <h4 class="text-sm font-semibold">21 March 2025</h4>
                 </div>
                 <button
-                  class="w-[120px] h-[48px] bg-[#3752FD] hover:bg-[#fff] hover:text-[#3752FD] text-[#fff] rounded-lg hover:rounded-none hover:border-2 hover:border-[#3752FD] font-medium text-base block mx-auto mt-4"
+                  class="w-[100px] h-[48px] bg-[#3752FD] hover:bg-[#fff] hover:text-[#3752FD] text-[#fff] rounded-lg hover:rounded-none hover:border-2 hover:border-[#3752FD] font-medium text-sm block mx-auto mt-4"
                 >
                   Completed
                 </button>
@@ -192,7 +191,7 @@
                   <h4 class="text-sm font-semibold">21 March 2025</h4>
                 </div>
                 <button
-                  class="w-[120px] h-[48px] bg-[#3752FD] hover:bg-[#fff] hover:text-[#3752FD] text-[#fff] rounded-lg hover:rounded-none hover:border-2 hover:border-[#3752FD] font-medium text-base block mx-auto mt-4"
+                  class="w-[100px] h-[48px] bg-[#3752FD] hover:bg-[#fff] hover:text-[#3752FD] text-[#fff] rounded-lg hover:rounded-none hover:border-2 hover:border-[#3752FD] font-medium text-sm block mx-auto mt-4"
                 >
                   Completed
                 </button>
@@ -217,7 +216,7 @@
                   <h4 class="text-sm font-semibold">21 March 2025</h4>
                 </div>
                 <button
-                  class="w-[120px] h-[48px] bg-[#3752FD] hover:bg-[#fff] hover:text-[#3752FD] text-[#fff] rounded-lg hover:rounded-none hover:border-2 hover:border-[#3752FD] font-medium text-base block mx-auto mt-4"
+                  class="w-[100px] h-[48px] bg-[#3752FD] hover:bg-[#fff] hover:text-[#3752FD] text-[#fff] rounded-lg hover:rounded-none hover:border-2 hover:border-[#3752FD] font-medium text-sm block mx-auto mt-4"
                 >
                   Completed
                 </button>
@@ -242,7 +241,7 @@
                   <h4 class="text-sm font-semibold">21 March 2025</h4>
                 </div>
                 <button
-                  class="w-[120px] h-[48px] bg-[#3752FD] hover:bg-[#fff] hover:text-[#3752FD] text-[#fff] rounded-lg hover:rounded-none hover:border-2 hover:border-[#3752FD] font-medium text-base block mx-auto mt-4"
+                  class="w-[100px] h-[48px] bg-[#3752FD] hover:bg-[#fff] hover:text-[#3752FD] text-[#fff] rounded-lg hover:rounded-none hover:border-2 hover:border-[#3752FD] font-medium text-sm block mx-auto mt-4"
                 >
                   Completed
                 </button>
@@ -267,7 +266,7 @@
                   <h4 class="text-sm font-semibold">21 March 2025</h4>
                 </div>
                 <button
-                  class="w-[120px] h-[48px] bg-[#3752FD] hover:bg-[#fff] hover:text-[#3752FD] text-[#fff] rounded-lg hover:rounded-none hover:border-2 hover:border-[#3752FD] font-medium text-base block mx-auto mt-4"
+                  class="w-[100px] h-[48px] bg-[#3752FD] hover:bg-[#fff] hover:text-[#3752FD] text-[#fff] rounded-lg hover:rounded-none hover:border-2 hover:border-[#3752FD] font-medium text-sm block mx-auto mt-4"
                 >
                   Completed
                 </button>
@@ -296,5 +295,9 @@
     <footer></footer>
 
     <script src="script.js"></script>
+    <script src="functions.js"></script>
+    <script>
+      const nextPage= changePage('next_page', './blog.html')
+    </script>
   </body>
 </html>
