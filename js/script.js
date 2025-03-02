@@ -11,7 +11,7 @@ const taskButton = document.querySelectorAll('.complete');
 for (const button of taskButton) {
     button.addEventListener('click', function () {
         // FIRST ALERT
-        alert('Board Updated Successfully')
+        alert('Board Updated Successfully');
 
         // TASK ASSIGNED PLUS
         let navElement= document.getElementById('nav_task');
@@ -33,9 +33,10 @@ for (const button of taskButton) {
 
         // HISTORY RESET
         const historyP = document.createElement('p');
-        historyP.style.cssText = "text-align: left; margin-top: 15px; font-weight: 600;";
+        historyP.style.cssText = "text-align: left; margin-top: 15px; font-weight: 600; font-size:15px; background: #eceefa; padding:10px 20px; border-radius:16px";
 
-        historyP.innerText = `You have completed the task at ${new Date().toLocaleTimeString('en-US')}`;
+        const taskTitle = this.closest('.task-container').querySelector('.title').innerText;
+        historyP.innerText = `You have completed the task ${taskTitle} at ${new Date().toLocaleTimeString('en-US')}`;
 
         document.getElementById('history').appendChild(historyP);
 

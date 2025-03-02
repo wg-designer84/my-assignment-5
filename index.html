@@ -107,7 +107,7 @@
           <!-- TASK ASSIGN SECTION START -->
           <div class="grid grid-cols-3 gap-4 mt-5">
             <!-- BOX-1 -->
-            <div class="bg-[#eceefa] rounded-2xl w-full h-auto p-5">
+            <div class="bg-[#eceefa] rounded-2xl w-full h-auto p-5 task-container">
               <h5
                 class="w-[104px] h-[40px] bg-[#fff] rounded-lg text-base font-normal flex justify-center items-center"
               >
@@ -134,7 +134,7 @@
               </div>
             </div>
             <!-- BOX-2 -->
-            <div class="bg-[#eceefa] rounded-2xl w-full h-auto p-5">
+            <div class="bg-[#eceefa] rounded-2xl w-full h-auto p-5 task-container">
               <h5
                 class="w-[104px] h-[40px] bg-[#fff] rounded-lg text-base font-normal flex justify-center items-center"
               >
@@ -160,13 +160,13 @@
               </div>
             </div>
             <!-- BOX-3 -->
-            <div class="bg-[#eceefa] rounded-2xl w-full h-auto p-5">
+            <div class="bg-[#eceefa] rounded-2xl w-full h-auto p-5 task-container">
               <h5
                 class="w-[104px] h-[40px] bg-[#fff] rounded-lg text-base font-normal flex justify-center items-center"
               >
                 SwiftPay
               </h5>
-              <h3 class="font-semibold text-xl my-4">Optimize Home page</h3>
+              <h3 class="font-semibold text-xl my-4 title">Optimize Home page</h3>
               <div class="bg-[#fff] rounded-lg p-3">
                 <p class="text-base text-[#757575] font-normal">
                   Debug using Chrome DevTools, check for overlapping...
@@ -185,13 +185,13 @@
               </div>
             </div>
             <!-- BOX-4 -->
-            <div class="bg-[#eceefa] rounded-2xl w-full h-auto p-5">
+            <div class="bg-[#eceefa] rounded-2xl w-full h-auto p-5 task-container">
               <h5
                 class="w-[104px] h-[40px] bg-[#fff] rounded-lg text-base font-normal flex justify-center items-center"
               >
                 Meta
               </h5>
-              <h3 class="font-semibold text-xl my-4">Add new emoji 🤲</h3>
+              <h3 class="font-semibold text-xl my-4 title">Add new emoji 🤲</h3>
               <div class="bg-[#fff] rounded-lg p-3">
                 <p class="text-base text-[#757575] font-normal">
                   Debug using Chrome DevTools, check for overlapping...
@@ -210,13 +210,13 @@
               </div>
             </div>
             <!-- BOX-5 -->
-            <div class="bg-[#eceefa] rounded-2xl w-full h-auto p-5">
+            <div class="bg-[#eceefa] rounded-2xl w-full h-auto p-5 task-container">
               <h5
                 class="w-[104px] h-[40px] bg-[#fff] rounded-lg text-base font-normal flex justify-center items-center"
               >
                 Google LLC
               </h5>
-              <h3 class="font-semibold text-xl my-4">Integrate OpenAI API</h3>
+              <h3 class="font-semibold text-xl my-4 title">Integrate OpenAI API</h3>
               <div class="bg-[#fff] rounded-lg p-3">
                 <p class="text-base text-[#757575] font-normal">
                   Debug using Chrome DevTools, check for overlapping...
@@ -234,13 +234,13 @@
               </div>
             </div>
             <!-- BOX-6 -->
-            <div class="bg-[#eceefa] rounded-2xl w-full h-auto p-5">
+            <div class="bg-[#eceefa] rounded-2xl w-full h-auto p-5 task-container">
               <h5
                 class="w-[104px] h-[40px] bg-[#fff] rounded-lg text-base font-normal flex justify-center items-center"
               >
                 Glassdoar
               </h5>
-              <h3 class="font-semibold text-xl my-4">Improve Job searching</h3>
+              <h3 class="font-semibold text-xl my-4 title">Improve Job searching</h3>
               <div class="bg-[#fff] rounded-lg p-3">
                 <p class="text-base text-[#757575] font-normal">
                   Debug using Chrome DevTools, check for overlapping...
@@ -281,8 +281,9 @@
 
     <footer></footer>
 
-    <script src="script.js"></script>
-    <script src="functions.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/tailwind.config.js"></script>
     <script>
       const nextPage= changePage('next_page', './blog.html')
     </script>
