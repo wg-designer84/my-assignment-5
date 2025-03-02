@@ -31,7 +31,7 @@ for (const button of taskButton) {
         button.disabled = true;
         button.style.cssText = 'background-color: #ccc; color: #666; border: 2px solid #aaa; cursor: not-allowed;';
 
-        // HISTORY RESET
+        // HISTORY SELECT
         const historyP = document.createElement('p');
         historyP.style.cssText = "text-align: left; margin-top: 15px; font-weight: 600; font-size:15px; background: #eceefa; padding:10px 20px; border-radius:16px";
 
