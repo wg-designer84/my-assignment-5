@@ -8,15 +8,23 @@ document.getElementById('bg-selector')
 
 // TASK ASSIGNED
 const taskButton = document.querySelectorAll('.complete');
-
 for (const button of taskButton) {
     button.addEventListener('click', function () {
+        // FIRST ALERT
+        alert('Board Updated Successfully')
+
+        // TASK ASSIGNED PLUS
+        let navElement= document.getElementById('nav_task');
+        let navTask = parseInt(navElement.innerText);
+
+        // TASK ASSIGNED MINUS
         let taskElement = document.getElementById('task');
         let task = parseInt(taskElement.innerText);
 
-        // TASK ASSIGNED MINUS
+        // TASK ASSIGNED 
         if (task > 0) {
             taskElement.innerText = task - 1;
+            navElement.innerText= navTask+1;
         }
         
         // BUTTON DISABLED
@@ -30,16 +38,14 @@ for (const button of taskButton) {
         historyP.innerText = `You have completed the task at ${new Date().toLocaleTimeString('en-US')}`;
 
         document.getElementById('history').appendChild(historyP);
+
+        
+        // SECOND ALERT
+        if(task-1 == 0){
+            alert('Congrates!!! You have completed all the task')
+        }
     });
 }
-
-
-
-
-
-
-
-
 
 // DATE CHANGE
 const options = {
